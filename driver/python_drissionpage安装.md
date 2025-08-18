@@ -62,10 +62,13 @@ Error: Package: google-chrome-stable-139.0.7258.127-1.x86_64 (/google-chrome-sta
 
 找一个适合centos7的老版本chrome
 http://dist.control.lth.se/public/CentOS-7/x86_64/google.x86_64/
+
 ```
+https://docs.centos.org/en-US/centos-linux/7/system-administrators-guide/packages/https://www.google.com/chrome/index.htm
 wget http://dist.control.lth.se/public/CentOS-7/x86_64/google.x86_64/google-chrome-stable-102.0.5005.61-1.x86_64.rpm
 yum install google-chrome-stable-102.0.5005.61-1.x86_64.rpm 
 ```
+
 
 ```
 =============================================================================================================
@@ -119,7 +122,7 @@ Dependency Installed:
 ```
 
 
-###　在Rocky9上安装新版
+### 在Rocky9上安装新版
 yum install -y google-chrome-stable_current_x86_64.rpm
 
 ```
@@ -332,16 +335,15 @@ base                 * /data/miniconda3
 py385                  /data/miniconda3/envs/py385
 ```
 
-
 conda activate py385
 
-###　安装DrissionPage
+### 安装DrissionPage
 pip install DrissionPage
 
-###　升级最新稳定版
+### 升级最新稳定版
 pip install DrissionPage --upgrade
 
-###　查看DrissionPage版
+### 查看DrissionPage版
 pip list|grep DrissionPage
 DrissionPage       4.1.1.2
 
