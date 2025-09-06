@@ -50,6 +50,17 @@ def get_position_detail(new_page):
         detail_data['job_type']     = ''
         detail_data['post_date']    = ''    
         detail_data['position_content'] = ''
+
+        # 提取职位名称
+        try:       
+            title_element = page.query_selector('.position-title')
+            if not title_element:
+                title_element = page.query_selector('h1')
+            if title_element:
+                detail_data['title'] = title_element.inner_text().strip()
+        except Exception as e:
+            print(f"✗ 提取职位名称时出错: {e}")
+
         # 提取职位基本信息 (地区、日期等) - 从class="bili-infotags"的div中获取
         try:
             card_div = new_page.ele('.bili-infotags', timeout=2)  # 先定位父级标签
