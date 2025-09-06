@@ -4,6 +4,13 @@
 
 这是一个基于 Playwright 的 B 站职位信息爬虫，能够自动化爬取 B 站官网发布的社会招聘和校园招聘职位信息，并将数据保存为 JSON 格式的文件。
 
+
+## 项目地址
+
++ Github: [https://github.com/andychu46/c1gspider](https://github.com/andychu46/c1gspider)
++ Blog： [https://blog.c1gstudio.com/](https://blog.c1gstudio.com/)
+
+
 ## 2. 技术栈与依赖
 
 - **Python**: 程序开发语言
