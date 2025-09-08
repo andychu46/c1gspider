@@ -1,7 +1,7 @@
-# B站职位爬虫(DrissionPage版)使用指南
+# B站校招职位爬虫(DrissionPage版)使用指南
 
 ## 项目简介
-本文档详细介绍B站职位爬虫工具`test_drission2.py`的使用方法和运行流程。该工具基于DrissionPage框架开发，用于抓取B站校招和社招职位信息并保存为JSON格式数据。
+本文档详细介绍B站职位爬虫工具`test_drission.py`的使用方法和运行流程。该工具基于DrissionPage框架开发，用于抓取B站校招和社招职位信息并保存为JSON格式数据。
 
 ## 技术栈
 - **核心框架**: DrissionPage (网页自动化与数据提取)
@@ -40,17 +40,17 @@ pip install DrissionPage
 
 #### 1. 爬取校招职位(默认)
 ```bash
-python test_drission2.py
+python test_drission.py
 ```
 
 #### 2. 爬取社招职位
 ```bash
-python test_drission2.py --type social
+python test_drission.py --type social
 ```
 
 #### 3. 自定义抓取参数
 ```bash
-python test_drission2.py --type social --max-page 5 --sleep 2.5
+python test_drission.py --type social --max-page 5 --sleep 2.5
 ```
 上述命令表示：抓取社招职位，最多抓取5页，每页抓取间隔2.5秒。
 
